@@ -1,13 +1,3 @@
-"""
-# DAG «Moscow Weather (temp, rain)»
-
-## S3 -> CH
-
-- Настроен сенсор. Если в S3 найдены новые данные, начинается загрузка
-- Погода: Москва
-- Хватает все файлы, включая перегруженное ретро
-"""
-
 from airflow import DAG
 from airflow.utils.task_group import TaskGroup
 from airflow.exceptions import AirflowSkipException
